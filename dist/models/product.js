@@ -1,22 +1,17 @@
-
 export default class Product {
-    sku: string;
-    name: string;
-    price: number;
-    
-
-    constructor(sku: string, name: string, price: number) {
+    sku;
+    name;
+    price;
+    constructor(sku, name, price) {
         this.sku = sku;
         this.name = name;
         this.price = price;
-        
     }
-    displayDetails(): string {
+    displayDetails() {
         return `${this.name} costs $${this.price}. The sku is ${this.sku}. `;
     }
-
-    getPriceWithTax():number{
+    getPriceWithTax() {
         return this.price;
     }
 }
-
+//# sourceMappingURL=product.js.map
